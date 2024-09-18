@@ -1,6 +1,6 @@
-FROM --platform=$TARGETPLATFORM golang:1.21.5-alpine3.18
+FROM --platform=$TARGETPLATFORM golang:1.22.7-alpine3.20
 
-ARG CFDGO_VERSION=v0.4.5
+ARG CFDGO_VERSION=v0.4.7
 RUN apk update && apk add --no-cache alpine-sdk git cmake
 
 WORKDIR /workspace
